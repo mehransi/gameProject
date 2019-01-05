@@ -122,7 +122,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 1521a772abdec614bb1a429336184d66, type: 2}
+  m_Motion: {fileID: 7400000, guid: 275bde1a066532d46b9a8585141b39e6, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -147,7 +147,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 267e498003510704f96cec28478df069, type: 2}
+  m_Motion: {fileID: 7400000, guid: e7955d43f429f54429c7cb7229e08373, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -174,7 +174,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: bd4631cb4fc2146409e0370a47cd3a00, type: 2}
+  m_Motion: {fileID: 7400000, guid: d0ffb03461536ce4abf187a9337bcebc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -190,20 +190,20 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102926605876720842}
-    m_Position: {x: 384, y: -84, z: 0}
+    m_Position: {x: -864, y: -252, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102219525343064488}
-    m_Position: {x: 504, y: 108, z: 0}
+    m_Position: {x: -732, y: -144, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102396257060406836}
-    m_Position: {x: 264, y: 108, z: 0}
+    m_Position: {x: -948, y: -132, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_AnyStatePosition: {x: -792, y: -60, z: 0}
+  m_EntryPosition: {x: -1056, y: -204, z: 0}
+  m_ExitPosition: {x: -1056, y: -48, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1102926605876720842}
