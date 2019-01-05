@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e570d343aaa865c4ea2f68b09112c98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  columnPrefab: {fileID: 1141899588598876, guid: 7ca3ba6fe69771647a27fd7924fd1c7d,
+  columnPrefab: {fileID: 1492238842254906, guid: 7ca3ba6fe69771647a27fd7924fd1c7d,
     type: 2}
   columnPoolSize: 5
   spawnRate: 3
@@ -663,7 +663,7 @@ SpriteRenderer:
   m_Size: {x: 9.6, y: 7.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!4 &1055438019
 Transform:
