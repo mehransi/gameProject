@@ -1223,7 +1223,7 @@ MonoBehaviour:
   upForce: 200
   fireRate: 0
   Damage: 10
-  ShitbirdPrefab: {fileID: 1360633573861712, guid: c37c1ebf18c2da14697b01b1c48f62b9,
+  ShitbirdPrefab: {fileID: 1360633573861712, guid: ce4590ac858e0264e9acd4d6f118b7de,
     type: 2}
 --- !u!95 &1926054513
 Animator:
