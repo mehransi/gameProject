@@ -6,7 +6,7 @@ public class ColumnPool : MonoBehaviour
 {
     public GameObject columnPrefab;                                 //The column game object.
     public int columnPoolSize = 5;                                  //How many columns to keep on standby.
-    public float spawnRate = 3f;                                    //How quickly columns spawn.
+    public float spawnRate = 4f;                                    //How quickly columns spawn.
     public float columnMin = 143f;                                   //Minimum y value of the column position.
     public float columnMax = 146.5f;                                  //Maximum y value of the column position.
 

@@ -218,6 +218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 227255061}
   - component: {fileID: 227255062}
+  - component: {fileID: 227255064}
   - component: {fileID: 227255063}
   m_Layer: 5
   m_Name: GameController
@@ -257,7 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 854785473}
   gameOvertext: {fileID: 732261681}
-  scrollSpeed: -1.5
+  scrollSpeed: -3
   gameOver: 0
 --- !u!114 &227255063
 MonoBehaviour:
@@ -273,9 +274,25 @@ MonoBehaviour:
   columnPrefab: {fileID: 1492238842254906, guid: 7ca3ba6fe69771647a27fd7924fd1c7d,
     type: 2}
   columnPoolSize: 5
-  spawnRate: 3
+  spawnRate: 2
   columnMin: 143
   columnMax: 146.5
+--- !u!114 &227255064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 227255060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a055b763455cf547926d0ab2ad16d5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefab: {fileID: 1396065793344462, guid: 8b5308570f9a17049bff4da26f42ae34, type: 2}
+  coinPoolSize: 5
+  spawnRate: 2
+  coinMin: 135
+  coinMax: 140.5
 --- !u!1 &490987052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,8 +1220,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1926054506}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.006, y: 139.64, z: 0}
-  m_LocalScale: {x: 0.989589, y: 1.0146435, z: 1}
+  m_LocalPosition: {x: -0.006, y: 139.42, z: 0}
+  m_LocalScale: {x: 0.98958904, y: 1.0146435, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1220,7 +1237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674d5d04e638f4942a222e253ecbd036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upForce: 200
+  upForce: 180
   fireRate: 0
   Damage: 10
   ShitbirdPrefab: {fileID: 1360633573861712, guid: ce4590ac858e0264e9acd4d6f118b7de,
