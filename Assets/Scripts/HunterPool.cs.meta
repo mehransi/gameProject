@@ -5,7 +5,9 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - hunterPrefab: {fileID: 1168183747520226, guid: f6399250552072443a54e78bedb88120,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

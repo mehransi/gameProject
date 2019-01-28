@@ -16,14 +16,14 @@ public class Hunter : MonoBehaviour {
 		timeSinceLastShot += Time.deltaTime;
 		if (fireBulletRate < timeSinceLastShot){
 				timeSinceLastShot = 0;
-				ShootBullet();
+				//ShootBullet();
 			}
 }
-void ShootBullet(){
+/*void ShootBullet(){
 
 	GameObject Bullet = Instantiate(BulletPrefab);
 	Bullet.transform.position = new Vector2(gameObject.transform.position[0]+0.60f,gameObject.transform.position[1]+0.35f);
 
 	// Debug.LogError(gameObject.transform.position[0]+gameObject.transform.position[1]);
-}
+}*/
 }

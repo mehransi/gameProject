@@ -222,8 +222,8 @@ GameObject:
   m_Component:
   - component: {fileID: 227255061}
   - component: {fileID: 227255062}
-  - component: {fileID: 227255064}
   - component: {fileID: 227255065}
+  - component: {fileID: 227255064}
   - component: {fileID: 227255063}
   m_Layer: 5
   m_Name: GameController
@@ -281,16 +281,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 227255060}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff2793a7fae29e942b27e66ca68971b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hunterPrefab: {fileID: 1168183747520226, guid: f6399250552072443a54e78bedb88120,
+    type: 2}
+  columnPoolSize: 2
+  spawnRate: 10
+  columnMin: 131
+  columnMax: 131
+--- !u!114 &227255064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 227255060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e570d343aaa865c4ea2f68b09112c98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   columnPrefab: {fileID: 1492238842254906, guid: 7ca3ba6fe69771647a27fd7924fd1c7d,
     type: 2}
   columnPoolSize: 5
-  spawnRate: 2
+  spawnRate: 4
   columnMin: 143
   columnMax: 146.5
---- !u!114 &227255064
+--- !u!114 &227255065
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -306,23 +323,6 @@ MonoBehaviour:
   spawnRate: 2
   coinMin: 135
   coinMax: 140.5
---- !u!114 &227255065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 227255060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff2793a7fae29e942b27e66ca68971b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hunterPrefab: {fileID: 1119220548296448, guid: f6399250552072443a54e78bedb88120,
-    type: 2}
-  columnPoolSize: 2
-  spawnRate: 10
-  columnMin: 131
-  columnMax: 131
 --- !u!1 &398768520
 GameObject:
   m_ObjectHideFlags: 0

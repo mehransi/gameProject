@@ -5,7 +5,8 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - aud: {fileID: 8300000, guid: 5ac6242608b593342802f2c42954d298, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

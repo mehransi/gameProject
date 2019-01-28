@@ -5,7 +5,9 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - ShitbirdPrefab: {fileID: 1360633573861712, guid: ce4590ac858e0264e9acd4d6f118b7de,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

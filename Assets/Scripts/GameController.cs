@@ -45,7 +45,7 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        SnoopButton = SnoopButton.GetComponent<Button>();
+        //SnoopButton = SnoopButton.GetComponent<Button>();
         //If the game is over and the player has pressed some input...
         if (gameOver && Input.GetMouseButtonDown(0))
         {

@@ -5,7 +5,9 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - columnPrefab: {fileID: 1492238842254906, guid: 7ca3ba6fe69771647a27fd7924fd1c7d,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

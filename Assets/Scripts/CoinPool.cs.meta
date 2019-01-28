@@ -5,7 +5,9 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - coinPrefab: {fileID: 1396065793344462, guid: 8b5308570f9a17049bff4da26f42ae34,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
