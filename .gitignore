@@ -351,6 +351,8 @@ healthchecksdb
 [Bb]uilds/
 [Ll]ogs/
 Assets/AssetStoreTools*
+Assets/ML-Agents
+Assets/Gizmos
 
 # Visual Studio cache directory
 
