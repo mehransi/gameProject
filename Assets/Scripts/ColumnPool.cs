@@ -10,7 +10,7 @@ public class ColumnPool : MonoBehaviour
     public float columnMin = 143f;                                   //Minimum y value of the column position.
     public float columnMax = 146.5f;                                  //Maximum y value of the column position.
 
-    private GameObject[] columns;                                   //Collection of pooled columns.
+    public static GameObject[] columns;                                   //Collection of pooled columns.
     private int currentColumn = 0;                                  //Index of the current column in the collection.
 
     private Vector2 objectPoolPosition = new Vector2 (-15,-25);     //A holding position for our unused columns offscreen.

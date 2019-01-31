@@ -10,7 +10,7 @@ public class CoinPool : MonoBehaviour
     public float coinMin = 135f;                                   //Minimum y value of the column position.
     public float coinMax = 140.5f;                                  //Maximum y value of the column position.
 
-    private GameObject[] coins;                                   //Collection of pooled columns.
+    public static GameObject[] coins;                                   //Collection of pooled columns.
     private int currentCoin = 0;                                  //Index of the current column in the collection.
     private Vector2 objectPoolPosition = new Vector2(-15, -25);     //A holding position for our unused columns offscreen.
     private float spawnXPosition = 7f;

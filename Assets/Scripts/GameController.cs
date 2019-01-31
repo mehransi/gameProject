@@ -17,8 +17,10 @@ public class GameController : MonoBehaviour
     public bool paniz = false;
     public bool changiz = false;
     public float scrollSpeed = -1.5f;
-    private int score = 0;                      //The player's score.
+    public int score = 0;                      //The player's score.
+    public int scored = 0;                      //what type of score player got(0:nothing 1:pipepass 2:coin ...)
     public bool gameOver = false;               //Is the game over?
+    public bool startAgain = false;
 
 
     // void Start ()
@@ -47,11 +49,9 @@ public class GameController : MonoBehaviour
     {
         //SnoopButton = SnoopButton.GetComponent<Button>();
         //If the game is over and the player has pressed some input...
-        if (gameOver && Input.GetMouseButtonDown(0))
+        if (gameOver && (Input.GetMouseButtonDown(0) || startAgain))
         {
-            // if(SnoopButton.OnCLick)
-            //...reload the current scene.
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
         }
     }
 
@@ -62,6 +62,7 @@ public class GameController : MonoBehaviour
             return;
         //If the game is not over, increase the score...
         score++;
+        
         //...and adjust the score text.
         scoreText.text = "Score: " + score.ToString();
     }
