@@ -9,15 +9,12 @@ public class BirdAgent : Agent
     public float upForce = 180;                   //Upward force of the "flap".
     private bool isDead = false;            //Has the player collided with a wall?
     private bool jump = false;
-    float reward;
+    private float rew;
     private Animator anim;                  //Reference to the Animator component.
     private Rigidbody2D rb2d;               //Holds a reference to the Rigidbody2D component of the bird.
-    public float fireRate = 0;
-    public float Damage = 10;
+    // public float Damage = 10;
     // public LayerMask notToHit;
     public GameObject ShitbirdPrefab;
-
-    float timeToFire = 0;
 
 
 
@@ -39,7 +36,7 @@ public class BirdAgent : Agent
         float toCoin = Mathf.FloorToInt(player_y-coinPos.y) + .5f;
         AddVectorObs((toCoin));
         AddVectorObs(Mathf.FloorToInt(coinPos.x));
-        AddVectorObs(player_y - pipePos.y - 5.65f);
+        AddVectorObs(player_y - pipePos.y - 5.85f);
         AddVectorObs(Mathf.FloorToInt(pipePos.x));
     }
 
@@ -53,11 +50,11 @@ public class BirdAgent : Agent
         rb2d.AddForce(new Vector2(0, upForce));
     }
 
-    public Vector3 GetNextPipe()
+    public Vector2 GetNextPipe()
     {
         float leftMost = float.MaxValue;
         GameObject leftChild = null;
-        Vector3 t = Vector3.zero;
+        Vector2 t = new Vector2(10,134);
         foreach (GameObject child in ColumnPool.columns)
         {
             if (child.transform.localPosition.x < leftMost &&
@@ -71,11 +68,11 @@ public class BirdAgent : Agent
             t = leftChild.transform.localPosition;
         return t;
     }
-    public Vector3 GetNextCoin()
+    public Vector2 GetNextCoin()
     {
         float leftMost = float.MaxValue;
         GameObject leftChild = null;
-        Vector3 t = Vector3.zero;
+        Vector2 t = new Vector2(10,134);
         foreach (GameObject child in CoinPool.coins)
         {
             if (child.transform.localPosition.x < leftMost &&
@@ -103,21 +100,22 @@ public class BirdAgent : Agent
             Push();
 
         }
+		rew = .001f;
         if (isDead)
         {
-            reward -= 1f;
+            rew -= 1f;
         }
        
         if (GameController.instance.scored == 1) {
-            reward += .1f;
+            rew += .01f;
             GameController.instance.scored = 0;
         }
         if (GameController.instance.scored == 2)
         {
-            reward += .05f;
+            rew += .002f;
             GameController.instance.scored = 0;
         }
-        AddReward(reward);
+        AddReward(rew);
         if (isDead) { 
             Done();
         }
@@ -144,7 +142,7 @@ public class BirdAgent : Agent
         //...tell the Animator about it...
         //anim.SetTrigger ("Die");
         //GameController.instance.startAgain = true;
-        //...and tell the game control about it.
+        //...and tell the game control about it
         //GameController.instance.BirdDied();
         
       }
@@ -152,8 +150,8 @@ public class BirdAgent : Agent
 
     public override void AgentReset()
     {
-        gameObject.transform.position = new Vector2(0,140);
-        gameObject.transform.rotation = Quaternion.identity;
+        int birdY = Random.Range(136, 140);
+        gameObject.transform.position = new Vector2(0,birdY);
 
         rb2d.velocity = Vector2.zero;
         GameController.instance.score = 0;

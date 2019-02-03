@@ -7,8 +7,8 @@ public class CoinPool : MonoBehaviour
     public GameObject coinPrefab;                                 //The column game object.
     public int coinPoolSize = 5;                                  //How many columns to keep on standby.
     public float spawnRate = 2f;                                    //How quickly columns spawn.
-    public float coinMin = 135f;                                   //Minimum y value of the column position.
-    public float coinMax = 140.5f;                                  //Maximum y value of the column position.
+    public float coinMin = 136f;                                   //Minimum y value of the column position.
+    public float coinMax = 140f;                                  //Maximum y value of the column position.
 
     public static GameObject[] coins;                                   //Collection of pooled columns.
     private int currentCoin = 0;                                  //Index of the current column in the collection.

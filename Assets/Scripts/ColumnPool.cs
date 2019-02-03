@@ -8,7 +8,7 @@ public class ColumnPool : MonoBehaviour
     public int columnPoolSize = 5;                                  //How many columns to keep on standby.
     public float spawnRate = 4f;                                    //How quickly columns spawn.
     public float columnMin = 143f;                                   //Minimum y value of the column position.
-    public float columnMax = 146.5f;                                  //Maximum y value of the column position.
+    public float columnMax = 145f;                                  //Maximum y value of the column position.
 
     public static GameObject[] columns;                                   //Collection of pooled columns.
     private int currentColumn = 0;                                  //Index of the current column in the collection.
